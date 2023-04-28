@@ -55,6 +55,11 @@ describe('Elp2000-82b', function() {
             console.log(elp2000CartesianJ2000(2458849.5));
         });
 
+        it('2024-04-08', function() {
+            // Additional example
+            console.log(elp2000SphericalOfDate(2460409.2555555557));
+        });
+
         // Compare to the hourly data from JPL Horizons.
         it('JPL Horizons 2020 hourly', function() {
             console.log(checkArray(horizon_array_hourly_2020));
